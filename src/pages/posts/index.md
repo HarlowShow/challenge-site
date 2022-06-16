@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
   import Cool from '../../components/Author.astro'
+  import TestSnippet from '../../components/TestSnippet.vue'
 title: Hello world!
 publishDate: 12 Sep 2021
 name: Nate Moore
@@ -10,6 +11,7 @@ description: Just a Hello World Post!
 ---
 
 <Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
+<TestSnippet></TestSnippet>
 
 This is so cool!
 
